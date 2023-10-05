@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra de navegación */
+.nav {
+    background-color: #3E517A;
+    padding: 2% 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 550px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .nav {
+        flex-direction: column; /* Cambiamos la dirección a vertical */
+        align-items: center; /* Centramos los elementos verticalmente */
+    }
+
+    .boton {
+        width: 80%; /* Ancho del botón al 80% del contenedor */
+        margin: 1% 0; /* Margen vertical para separar los botones */
+    }
+
+    .titulo {
+        font-size: 2em; /* Reducimos el tamaño del título */
+    }
+
+    .container {
+        flex-direction: column; /* Cambiamos la dirección a vertical */
+    }
+    .img1 {
+        border-radius: 20%;
+        max-width: 100%;
+        height: auto;
+        max-height: 500px;
+        min-width: 6em;
+        width: auto;
+    }
+    
+    .columnaderecha em{
+        font-size: 0.5em; /* Reducimos el tamaño del texto de la columna derecha */
+    }
+    .columnaderecha strong{
+        font-size: 0.5em; /* Reducimos el tamaño del texto de la columna derecha */
+    }
+    .columnaderecha h1 {
+        font-size: 0.7em;
+    }
+}
+
+.boton {
+    background-color: #D9D9D9;
+    padding: 1% 2%;
+    color: #3E517A;
+    font-family: Helvetica;
+    font-size: 2em;
+    font-weight: 900;
+    border-radius: 2em;
+    margin: 1%;
+    transition: transform 0.2s;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+}
+
+.titulo {
+    color: #3E517A;
+    text-align: center;
+    font-size: 3em;
+    margin: 2% 0;
+}
+
+.container {
+    background-color: #A8E0FF;
+    border-radius: 2em;
+    border: 2px solid #000;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 2%;
+    flex: 1;
+}
+
+.columnaizquierda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.img1 {
+    border-radius: 20%;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    width: auto;
+}
+
+.columnaderecha {
+    color: #3E517A;
+    font-size: 2.5em;
+    text-align: left;
+    margin: 2%;
+    flex: 1;
+}
+
+.columnaderecha strong {
+    font-weight: bold;
+}
+
+.pie_de_pagina {
+    background-color: #3E517A;
+    padding: 2% 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: auto;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.logo img {
+    max-width: 200px;
+}
