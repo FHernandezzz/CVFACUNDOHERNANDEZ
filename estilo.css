@@ -14,7 +14,8 @@ body {
     padding: 2% 0;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Ajusta la distribución de los elementos */
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -90,6 +91,17 @@ body {
     }
     .columnaderecha h1 {
         font-size: 0.6em;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1080px) {
+    .nav {
+        flex-wrap: wrap; /* Ajusta el comportamiento de envoltura para evitar desbordamientos */
+    }
+
+    .boton {
+        flex-basis: 24%; /* Ajusta el ancho de los botones según tus necesidades */
+        margin: 1%;
     }
 }
 
